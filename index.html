@@ -1,0 +1,289 @@
+<section class="swift-team-section">
+  <div class="swift-team-bg-shape shape-1"></div>
+  <div class="swift-team-bg-shape shape-2"></div>
+
+  <div class="swift-team-container">
+    <div class="swift-team-heading">
+      <span class="swift-team-kicker">Meet the Team</span>
+      <h2>The People Behind Swift Moving</h2>
+      <p>
+        Friendly, reliable, and professional movers dedicated to making every move smooth and stress-free across New Zealand.
+      </p>
+    </div>
+
+    <div class="swift-team-grid">
+      <article class="swift-team-card active">
+        <div class="swift-team-image-wrap">
+          <img src="https://charlesr104.sg-host.com/wp-content/uploads/2026/03/01-1.jpg" alt="Aaron - Founder" />
+          <div class="swift-team-badge">Founder</div>
+        </div>
+        <div class="swift-team-content">
+          <h3>Aaron</h3>
+          <span class="swift-team-role">Founder</span>
+          <p>
+            Hello, I’m Aaron, founder of Swift Moving. Born and raised in Christchurch, I built the company to deliver reliable and customer-focused moving services across New Zealand.
+          </p>
+        </div>
+      </article>
+
+      <article class="swift-team-card">
+        <div class="swift-team-image-wrap">
+          <img src="https://charlesr104.sg-host.com/wp-content/uploads/2026/03/01-1.jpg" alt="Jake - Operations Manager" />
+          <div class="swift-team-badge">Operations</div>
+        </div>
+        <div class="swift-team-content">
+          <h3>Jake</h3>
+          <span class="swift-team-role">Operations Manager</span>
+          <p>
+            Jake ensures every move runs smoothly with strong planning and logistics experience. He focuses on keeping jobs efficient, organised, and stress-free for customers.
+          </p>
+        </div>
+      </article>
+
+      <article class="swift-team-card">
+        <div class="swift-team-image-wrap">
+          <img src="https://charlesr104.sg-host.com/wp-content/uploads/2026/03/01-1.jpg" alt="Sam - Lead Mover" />
+          <div class="swift-team-badge">On-Site Lead</div>
+        </div>
+        <div class="swift-team-content">
+          <h3>Sam</h3>
+          <span class="swift-team-role">Lead Mover</span>
+          <p>
+            Sam leads the team on-site and makes sure every move is handled with care and professionalism. His friendly attitude helps create a great experience for every client.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .swift-team-section {
+    position: relative;
+    overflow: hidden;
+    padding: 90px 20px;
+    background:
+      radial-gradient(circle at top left, rgba(255, 184, 77, 0.18), transparent 30%),
+      radial-gradient(circle at bottom right, rgba(0, 122, 255, 0.14), transparent 28%),
+      linear-gradient(135deg, #f7f9fc 0%, #ffffff 100%);
+    font-family: Arial, sans-serif;
+  }
+
+  .swift-team-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  .swift-team-heading {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 50px;
+  }
+
+  .swift-team-kicker {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #ff8a00;
+    background: rgba(255, 138, 0, 0.1);
+    padding: 8px 14px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+
+  .swift-team-heading h2 {
+    margin: 0 0 14px;
+    font-size: clamp(32px, 4vw, 50px);
+    line-height: 1.08;
+    color: #111827;
+    font-weight: 800;
+  }
+
+  .swift-team-heading p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #5b6472;
+  }
+
+  .swift-team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+  }
+
+  .swift-team-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(17, 24, 39, 0.06);
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 18px 45px rgba(17, 24, 39, 0.08);
+    transform: translateY(30px);
+    opacity: 0;
+    transition: transform 0.45s ease, box-shadow 0.35s ease, border-color 0.35s ease, opacity 0.6s ease;
+  }
+
+  .swift-team-card.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .swift-team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 26px 60px rgba(17, 24, 39, 0.14);
+    border-color: rgba(255, 138, 0, 0.22);
+  }
+
+  .swift-team-image-wrap {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+  }
+
+  .swift-team-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s ease;
+  }
+
+  .swift-team-card:hover .swift-team-image-wrap img {
+    transform: scale(1.08);
+  }
+
+  .swift-team-image-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(17, 24, 39, 0.18), transparent 50%);
+    pointer-events: none;
+  }
+
+  .swift-team-badge {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+    z-index: 2;
+    background: rgba(17, 24, 39, 0.78);
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    backdrop-filter: blur(8px);
+  }
+
+  .swift-team-content {
+    padding: 26px 24px 28px;
+  }
+
+  .swift-team-content h3 {
+    margin: 0 0 6px;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #111827;
+    font-weight: 800;
+  }
+
+  .swift-team-role {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #ff8a00;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .swift-team-content p {
+    margin: 0;
+    color: #596273;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .swift-team-bg-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .swift-team-bg-shape.shape-1 {
+    width: 260px;
+    height: 260px;
+    top: -80px;
+    left: -80px;
+    background: rgba(255, 138, 0, 0.12);
+  }
+
+  .swift-team-bg-shape.shape-2 {
+    width: 300px;
+    height: 300px;
+    right: -100px;
+    bottom: -100px;
+    background: rgba(0, 122, 255, 0.1);
+  }
+
+  @media (max-width: 1024px) {
+    .swift-team-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 767px) {
+    .swift-team-section {
+      padding: 70px 16px;
+    }
+
+    .swift-team-grid {
+      grid-template-columns: 1fr;
+      gap: 22px;
+    }
+
+    .swift-team-image-wrap {
+      height: 280px;
+    }
+
+    .swift-team-content {
+      padding: 22px 20px 24px;
+    }
+
+    .swift-team-content h3 {
+      font-size: 24px;
+    }
+
+    .swift-team-heading {
+      margin-bottom: 34px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".swift-team-card");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              entry.target.classList.add("is-visible");
+            }, index * 150);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    cards.forEach((card) => observer.observe(card));
+  });
+</script>
